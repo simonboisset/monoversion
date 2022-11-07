@@ -1,0 +1,41 @@
+{
+  "name": "turboversion",
+  "version": "0.1.0",
+  "description": "Monorepo versionning for publishing library",
+  "bin": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && node build.js && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonboisset/turboversion"
+  },
+  "bugs": {
+    "url": "https://github.com/simonboisset/turboversion/issues"
+  },
+  "homepage": "https://github.com/simonboisset/turboversion",
+  "author": "Simon Boisset <simonboisset.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/prettier": "^2.7.1",
+    "esbuild": "^0.14.42",
+    "esbuild-node-externals": "^1.4.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "keywords": [
+    "monorepo",
+    "version",
+    "library"
+  ]
+}
