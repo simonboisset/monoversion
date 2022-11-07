@@ -1,7 +1,7 @@
 {
   "name": "turboversion",
-  "version": "0.1.0",
-  "description": "Monorepo versionning for publishing library",
+  "version": "1.0.0",
+  "description": "Monorepo versioning for publishing library",
   "bin": "index.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
