@@ -11,6 +11,11 @@ const updatePackage = (scope: string, dir: string, version: string) => {
       packages.dependencies[dependency] = version;
     }
   }
+  for (const devDependency in packages.devDependencies) {
+    if (devDependency.includes(scope)) {
+      packages.devDependencies[devDependency] = version;
+    }
+  }
 
   fs.writeFileSync(file, prettier.format(JSON.stringify(packages), { parser: 'json', printWidth: 1 }));
 };
