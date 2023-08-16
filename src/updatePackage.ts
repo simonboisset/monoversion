@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import prettier from 'prettier';
 
-const updatePackage = (scope: string, dir: string, version: string) => {
+const updatePackage = async(scope: string, dir: string, version: string) => {
   const file = path.join(dir, 'package.json');
   let packages = JSON.parse(fs.readFileSync(file) as any);
   packages.version = version;
@@ -16,8 +16,8 @@ const updatePackage = (scope: string, dir: string, version: string) => {
       packages.devDependencies[devDependency] = version;
     }
   }
-
-  fs.writeFileSync(file, prettier.format(JSON.stringify(packages), { parser: 'json', printWidth: 1 }));
+const data = await  prettier.format(JSON.stringify(packages), { parser: 'json', printWidth: 1 })
+  fs.writeFileSync(file,data);
 };
 
 export default updatePackage;
