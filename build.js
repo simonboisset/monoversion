@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const esbuild = require('esbuild');
 const { nodeExternalsPlugin } = require('esbuild-node-externals');
 esbuild
