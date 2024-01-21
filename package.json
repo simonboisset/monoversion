@@ -1,6 +1,6 @@
 {
-  "name": "turboversion",
-  "version": "1.2.0",
+  "name": "monoversion",
+  "version": "1.2.1",
   "description": "Monorepo versioning for publishing library",
   "bin": "index.js",
   "main": "dist/index.js",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonboisset/turboversion"
+    "url": "https://github.com/simonboisset/monoversion"
   },
   "bugs": {
-    "url": "https://github.com/simonboisset/turboversion/issues"
+    "url": "https://github.com/simonboisset/monoversion/issues"
   },
-  "homepage": "https://github.com/simonboisset/turboversion",
+  "homepage": "https://github.com/simonboisset/monoversion",
   "author": "Simon Boisset <simonboisset.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
