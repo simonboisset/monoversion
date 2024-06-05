@@ -1,6 +1,6 @@
 {
   "name": "monoversion",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Monorepo versioning for publishing library",
   "bin": "index.js",
   "main": "dist/index.js",
@@ -10,8 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && node build.js && tsc",
-    "up": "yarn upgrade-interactive --latest"
+    "build": "rm -rf dist && node build.js && tsc"
   },
   "repository": {
     "type": "git",
@@ -24,15 +23,14 @@
   "author": "Simon Boisset <simonboisset.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.5.0",
-    "@types/prettier": "^3.0.0",
-    "esbuild": "^0.19.2",
-    "esbuild-node-externals": "^1.8.0",
-    "prettier": "^3.0.2",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.14.2",
+    "esbuild": "^0.21.4",
+    "esbuild-node-externals": "^1.13.1",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.3.1"
   },
   "keywords": [
     "monorepo",
